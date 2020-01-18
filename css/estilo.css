@@ -1,0 +1,42 @@
+ /* Barra de navegação horizontal*/
+
+ul {
+margin:0;
+padding:0;
+list-style:none; /*Remove o tipo de lista */
+width:720px;
+background:#159cb0 url(../imagem/fundo-horizontal.png) repeat-x; /*repeat-x a imagem na horizontal*/
+float:left;
+}
+ul li{
+	float:left;
+}
+
+/* Formatando os links*/
+ul a{
+	display:block; /* por padrão ele tem display inline.ai colocamos o block*/
+	padding:0 2em;
+	line-height:2.2em; /*altura da linha*/
+	text-decoration: none;
+	color:#fff;
+	/*Poderiamos usar border-left para colocar a barra ao meio,mais interessante colocar imagem para dar melhor efeito
+	border-left:1px  solid black;*/
+	background:url(../imagem/divisor.png)repeat-y left top;/*Ta repetindo só na vertical*/
+
+}
+ul .primeiro a {
+	background:none;
+}
+
+ul a:hover { /* Formatando link e dando efeito com hover*/
+	color:#085662;
+	background:#44cade;
+
+}
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a{
+	color:#085662;
+	background:#44cade;
+
+}
